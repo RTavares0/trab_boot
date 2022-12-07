@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: #1f2630;
+    justify-content: center;
+    align-items:center;
+    position:absolute;
+    width: 100%;
+    border-bottom:5px solid #0cd764
+}
+
+.logo{
+    flex:10%;
+    margin-left: 10%;
+    /* border: 1px solid red; */
+    text-align: left;
+    
+
+}
+.menu {
+    flex:80%;
+    /*border: 1px solid green; */
+    text-align: left;
+    padding: 10px;
+}
+
+.menu a{
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover{
+    color:#0cd764;
+    border-top: 4px solid #0cd764;
+}
+
+.header{
+    display:flex;
+    flex-flow: row wrap;
+    background: #1f2630;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    /* height: 600px; */
+    
+    
+}
+
+.headline_l{
+    margin-top: 5px;
+    margin-left: 10%;
+    flex:40%;
+    padding-bottom: 5px;
+    color: grey;
+     /* height: 500px;   */
+    /* border:1px solid black;  */
+    
+
+
+}
+.headline_r{
+    margin-top: 5px;
+    margin-right: 10%;
+    flex:40%;
+    /* border: 1px solid red;  */
+    text-align: center; 
+    padding-top: 5px;
+
+ }
+footer{
+    height: 150px;
+    background-image: linear-gradient(180deg,#1f2630,black,black);
+    text-align: center;
+    border-top:5px solid #0cd764
+
+
+}
+.rodape{
+    padding: 30px;
+    /* border:1px solid white; */
+    color: grey;
+    font-size: 10px;
+
+}
+
+#form{
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background:#1f2630;
+}
+
+#foto.headline_r{
+    animation-name: foto;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    transform:translateY(20px) ;
+  }
+
+  @keyframes foto {
+    from{
+        opacity: 0;
+
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+
+
+    }
+}
